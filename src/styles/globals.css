@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-[#FDF7F2] text-ink-800 antialiased font-sans;
+}
+
+/* Soft page gradient used on auth screens */
+.bg-auth {
+  background: radial-gradient(1200px 600px at 10% -10%, #FFE4D1 0%, transparent 60%),
+    radial-gradient(900px 500px at 110% 110%, #FFEDDC 0%, transparent 55%), #FDF7F2;
+}
+
+/* Hide number input spinners */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Thin scrollbar for nav / tables */
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #d7d9df;
+  border-radius: 3px;
+}
