@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/card';
-import { IconAlert, IconArrowDown, IconArrowUp, IconCheck, IconReport } from '@/components/ui/icons';
+import { IconAlert, IconArrowUp, IconCheck, IconReport } from '@/components/ui/icons';
 import { Skeleton } from '@/components/ui/states';
 import { cn } from '@/lib/utils';
 import type { AssessmentSummary, BandSegment, SummarySubscale } from '../types';
